@@ -1,0 +1,400 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>SkillBayz</title>
+	
+<link href="skillbayz.css" rel="stylesheet" type="text/css">
+	
+</head>
+
+<body>
+	<div id="container">
+	<menu>
+	<div class="left">
+	<a href="index.html"><img src="sblogo.png" class="logo"></a>
+	<div id="nav">
+	<a href="tools.html">Tools</a>
+	<div class="dropdown">
+		<button class="dropbtn">Categories </button>
+        <div class="dropdown-content">
+        <a href="writing.html">&#9999;&#65039; Writing</a>
+        <a href="image.html">&#128444;&#65039; Image</a>
+        <a href="video.html">&#x1F3AC; Video</a>
+		<a href="voice.html">&#x1F3A4; Voice</a>
+		<a href="code.html">&#x1F4BB; Code</a>
+		<a href="music.html">&#127911; Music</a>
+		<a href="design.html">&#x1F3A8; Design</a>
+	    <a href="research.html">&#x1F50D; Research</a>
+		<a href="advice.html">&#x1F4A1; Advice</a></div>
+	</div>
+	<a href="suggest.html">Suggest</a>
+	</div></div><div class="right">
+	<a href="tools.html?focus=true" class="sok-icon" alt="Search"></a>
+	<span onClick="menuDrop()" id="mobile-nav"><span>&equiv;</span>
+	<div id="mob-men" class="hidden">
+		<a href="tools.html">Tools</a>
+		<a href="suggest.html">Suggest</a>
+	</div></span>
+	</div>
+	</menu>
+	
+	<main class="toolmain">
+		<div class="cat">
+		<a href="writing.html">&#9999;&#65039; Writing</a>
+        <a href="image.html">&#128444;&#65039; Image</a>
+        <a href="video.html">&#x1F3AC; Video</a>
+		<a href="voice.html">&#x1F3A4; Voice</a>
+		<a href="code.html" class="act-cat">&#x1F4BB; Code</a>
+		<a href="music.html">&#127911; Music</a>
+		<a href="design.html">&#x1F3A8; Design</a>
+	    <a href="research.html">&#x1F50D; Research</a>
+		<a href="advice.html">&#x1F4A1; Advice</a>
+		</div>
+		<div>
+		<table>
+			<thead>
+			<tr><td></td><td class="book"><span>&#128366;</span></td><td>Name</td><td class="free"><span>Free</span></td><td class="des">&#128366; Description</td><td></td></tr>
+			</thead>
+			<tbody>
+				
+			<tr><td class="fav">
+			<span class="star" onclick="fillStar(this)">&#9733;</span></td>
+			<td class="book"><span onclick="desDrop(this)">&#128366;<span class="popup">
+			CodeWP is an advanced tool that uses artificial intelligence to generate WordPress code. It speeds up website creation and improves efficiency. It specializes in WordPress, WooCommerce, PHP, JS, jQuery, and other widely used plugins.</span></span></td>
+			<td class="ainame"><a href="https://codewp.ai/" target="_blank">
+			CodeWP<span>&#x1F4BB;</span></a></td><td class="free">
+			<span>Yes</span></td><td class="des">
+			CodeWP is an advanced tool that uses artificial intelligence to generate WordPress code. It speeds up website creation and improves efficiency. It specializes in WordPress, WooCommerce, PHP, JS, jQuery, and other widely used plugins.</td>
+			<td class="try"><a href="https://codewp.ai/" target="_blank" class="knapp">Try it</a><div class="hov" onmouseover="hovH(this)" onmouseout="hovH(this)"></div></td></tr>
+			
+			<tr><td class="fav">
+			<span class="star" onclick="fillStar(this)">&#9733;</span></td>
+			<td class="book"><span onclick="desDrop(this)">&#128366;<span class="popup">
+			AIHelperBot is an AI-driven tool that creates, clarifies, and enhances SQL queries effortlessly. You don't need any SQL expertise. It's as simple as sending a text message but possesses the capabilities of a seasoned SQL expert.</span></span></td>
+			<td class="ainame"><a href="https://aihelperbot.com/" target="_blank">
+			AIHelperBot<span>&#x1F4BB;</span></a></td><td class="free">
+			<span>Trial</span></td><td class="des">
+			AIHelperBot is an AI-driven tool that creates, clarifies, and enhances SQL queries effortlessly. You don't need any SQL expertise. It's as simple as sending a text message but possesses the capabilities of a seasoned SQL expert.</td>
+			<td class="try"><a href="https://aihelperbot.com/" target="_blank" class="knapp">Try it</a><div class="hov" onmouseover="hovH(this)" onmouseout="hovH(this)"></div></td></tr>
+				
+			<tr><td class="fav">
+			<span class="star" onclick="fillStar(this)">&#9733;</span></td>
+			<td class="book"><span onclick="desDrop(this)">&#128366;<span class="popup">
+			SinCode AI is a comprehensive platform that combines content, copy, and image generation. With 50+ AI tools, it enables you to effortlessly produce captivating and SEO-optimized content. Improve your writing speed and quality with ease.</span></span></td>
+			<td class="ainame"><a href="https://www.sincode.ai/" target="_blank">
+			SinCode<span>&#9999;&#65039;&#128444;&#65039;&#x1F4BB;</span></a></td><td class="free">
+			<span>Yes</span></td><td class="des">
+			SinCode AI is a comprehensive platform that combines content, copy, and image generation. With 50+ AI tools, it enables you to effortlessly produce captivating and SEO-optimized content. Improve your writing speed and quality with ease.</td>
+			<td class="try"><a href="https://www.sincode.ai/" target="_blank" class="knapp">Try it</a><div class="hov" onmouseover="hovH(this)" onmouseout="hovH(this)"></div></td></tr>
+				
+			<tr><td class="fav">
+			<span class="star" onclick="fillStar(this)">&#9733;</span></td>
+			<td class="book"><span onclick="desDrop(this)">&#128366;<span class="popup">
+			Uizard is an advanced AI-driven tool for designing mobile apps, websites, and user interfaces (UIs) quickly and effortlessly. With Uizard's AI Design Assistant, you can transform hand-drawn sketches into stunning designs automatically. Simplify your design process with ease.</span></span></td>
+			<td class="ainame"><a href="https://uizard.io/" target="_blank">
+			Uizard<span>&#x1F4BB;&#x1F3A8;</span></a></td><td class="free">
+			<span>Yes</span></td><td class="des">
+			Uizard is an advanced AI-driven tool for designing mobile apps, websites, and user interfaces (UIs) quickly and effortlessly. With Uizard's AI Design Assistant, you can transform hand-drawn sketches into stunning designs automatically. Simplify your design process with ease.</td>
+			<td class="try"><a href="https://uizard.io/" target="_blank" class="knapp">Try it</a><div class="hov" onmouseover="hovH(this)" onmouseout="hovH(this)"></div></td></tr>
+				
+			<tr><td class="fav">
+			<span class="star" onclick="fillStar(this)">&#9733;</span></td>
+			<td class="book"><span onclick="desDrop(this)">&#128366;<span class="popup">
+			Durable AI is a cutting-edge website builder that harnesses the power of artificial intelligence (AI) to assist entrepreneurs in swiftly and effortlessly building polished websites. With Durable, users can create their own site in just 30 seconds, thanks to AI-generated features like name suggestions, professional photos, AI-written content, and custom domains.</span></span></td>
+			<td class="ainame"><a href="https://durable.co/" target="_blank">
+			Durable<span>&#x1F4BB;</span></a></td><td class="free">
+			<span>No</span></td><td class="des">
+			Durable AI is a cutting-edge website builder that harnesses the power of artificial intelligence (AI) to assist entrepreneurs in swiftly and effortlessly building polished websites. With Durable, users can create their own site in just 30 seconds, thanks to AI-generated features like name suggestions, professional photos, AI-written content, and custom domains.</td>
+			<td class="try"><a href="https://durable.co/" target="_blank" class="knapp">Try it</a><div class="hov" onmouseover="hovH(this)" onmouseout="hovH(this)"></div></td></tr>
+				
+			<tr><td class="fav">
+			<span class="star" onclick="fillStar(this)">&#9733;</span></td>
+			<td class="book"><span onclick="desDrop(this)">&#128366;<span class="popup">
+			VWO is the top web testing and conversion optimization platform globally. It empowers growing businesses to enhance their web experience on various devices, providing a distinctive user journey.</span></span></td>
+			<td class="ainame"><a href="https://vwo.com/" target="_blank">
+			VWO<span>&#x1F4BB;</span></a></td><td class="free">
+			<span>Yes</span></td><td class="des">
+			VWO is the top web testing and conversion optimization platform globally. It empowers growing businesses to enhance their web experience on various devices, providing a distinctive user journey.</td>
+			<td class="try"><a href="https://vwo.com/" target="_blank" class="knapp">Try it</a><div class="hov" onmouseover="hovH(this)" onmouseout="hovH(this)"></div></td></tr>
+				
+			<tr><td class="fav">
+			<span class="star" onclick="fillStar(this)">&#9733;</span></td>
+			<td class="book"><span onclick="desDrop(this)">&#128366;<span class="popup">
+			10Web provides a WordPress platform fueled by AI, making website creation and management easier for site owners. With the AI Builder and its Elementor-based drag and drop editor, users can swiftly generate or recreate websites in just minutes.</span></span></td>
+			<td class="ainame"><a href="https://10web.io/" target="_blank">
+			10Web<span>&#x1F4BB;</span></a></td><td class="free">
+			<span>No</span></td><td class="des">
+			10Web provides a WordPress platform fueled by AI, making website creation and management easier for site owners. With the AI Builder and its Elementor-based drag and drop editor, users can swiftly generate or recreate websites in just minutes.</td>
+			<td class="try"><a href="https://10web.io/" target="_blank" class="knapp">Try it</a><div class="hov" onmouseover="hovH(this)" onmouseout="hovH(this)"></div></td></tr>
+				
+			<tr><td class="fav">
+			<span class="star" onclick="fillStar(this)">&#9733;</span></td>
+			<td class="book"><span onclick="desDrop(this)">&#128366;<span class="popup">
+			ChatBotKit is an AI-driven platform that simplifies the creation and deployment of chatbots capable of natural language interactions. It caters to developers and non-developers alike, allowing them to effortlessly build conversational chatbots that can engage with users across multiple channels like websites, Slack, and Discord.</span></span></td>
+			<td class="ainame"><a href="https://chatbotkit.com/" target="_blank">
+			ChatBotKit<span>&#x1F4BB;</span></a></td><td class="free">
+			<span>No</span></td><td class="des">
+			ChatBotKit is an AI-driven platform that simplifies the creation and deployment of chatbots capable of natural language interactions. It caters to developers and non-developers alike, allowing them to effortlessly build conversational chatbots that can engage with users across multiple channels like websites, Slack, and Discord.</td>
+			<td class="try"><a href="https://chatbotkit.com/" target="_blank" class="knapp">Try it</a><div class="hov" onmouseover="hovH(this)" onmouseout="hovH(this)"></div></td></tr>
+				
+			<tr><td class="fav">
+			<span class="star" onclick="fillStar(this)">&#9733;</span></td>
+			<td class="book"><span onclick="desDrop(this)">&#128366;<span class="popup">
+			GitHub Copilot is an AI-based tool for pair programming that operates within your editor. It offers suggestions for complete lines or even entire functions. Powered by OpenAI Codex, it provides real-time code suggestions and draws from a vast dataset of billions of lines of code in various programming languages.</span></span></td>
+			<td class="ainame"><a href="https://github.com/features/copilot" target="_blank">
+			GitHub Copilot<span>&#x1F4BB;</span></a></td><td class="free">
+			<span>Yes</span></td><td class="des">
+			GitHub Copilot is an AI-based tool for pair programming that operates within your editor. It offers suggestions for complete lines or even entire functions. Powered by OpenAI Codex, it provides real-time code suggestions and draws from a vast dataset of billions of lines of code in various programming languages.</td>
+			<td class="try"><a href="https://github.com/features/copilot" target="_blank" class="knapp">Try it</a><div class="hov" onmouseover="hovH(this)" onmouseout="hovH(this)"></div></td></tr>
+				
+			<tr><td class="fav">
+			<span class="star" onclick="fillStar(this)">&#9733;</span></td>
+			<td class="book"><span onclick="desDrop(this)">&#128366;<span class="popup">
+			Amazon CodeWhisperer is an AI coding companion that speeds up your productivity by providing suggestions for complete lines and full function code directly in your IDE.</span></span></td>
+			<td class="ainame"><a href="https://aws.amazon.com/codewhisperer/" target="_blank">
+			Codewhsiper<span>&#x1F4BB;</span></a></td><td class="free">
+			<span>Yes</span></td><td class="des">
+			Amazon CodeWhisperer is an AI coding companion that speeds up your productivity by providing suggestions for complete lines and full function code directly in your IDE.</td>
+			<td class="try"><a href="https://aws.amazon.com/codewhisperer/" target="_blank" class="knapp">Try it</a><div class="hov" onmouseover="hovH(this)" onmouseout="hovH(this)"></div></td></tr>
+				
+			<tr><td class="fav">
+			<span class="star" onclick="fillStar(this)">&#9733;</span></td>
+			<td class="book"><span onclick="desDrop(this)">&#128366;<span class="popup">
+			ChatGPT, the leading conversational AI model, transforms interactions into insightful conversations. With its vast knowledge and language prowess, ChatGPT engages users in natural and meaningful dialogue, offering valuable assistance, creative solutions, and an immersive conversational experience.</span></span></td>
+			<td class="ainame"><a href="https://chat.openai.com/" target="_blank">
+			ChatGPT<span>&#9999;&#65039;&#x1F4BB;&#x1F4A1;</span></a></td><td class="free"><span>Yes</span></td><td class="des">
+			ChatGPT, the leading conversational AI model, transforms interactions into insightful conversations. With its vast knowledge and language prowess, ChatGPT engages users in natural and meaningful dialogue, offering valuable assistance, creative solutions, and an immersive conversational experience.</td>
+			<td class="try"><a href="https://chat.openai.com/" target="_blank" class="knapp">Try it</a><div class="hov" onmouseover="hovH(this)" onmouseout="hovH(this)"></div></td></tr>
+			
+			<tr><td class="fav">
+			<span class="star" onclick="fillStar(this)">&#9733;</span></td>
+			<td class="book"><span onclick="desDrop(this)">&#128366;<span class="popup">
+			Tabnine is an AI code assistant created to enhance the coding speed and accuracy of software developers. It offers customized whole-line and full-function code completions based on each developer's coding style and preferences.</span></span></td>
+			<td class="ainame"><a href="https://www.tabnine.com/" target="_blank">
+			Tabnine<span>&#x1F4BB;</span></a></td><td class="free">
+			<span>Yes</span></td><td class="des">
+			Tabnine is an AI code assistant created to enhance the coding speed and accuracy of software developers. It offers customized whole-line and full-function code completions based on each developer's coding style and preferences.</td>
+			<td class="try"><a href="https://www.tabnine.com/" target="_blank" class="knapp">Try it</a><div class="hov" onmouseover="hovH(this)" onmouseout="hovH(this)"></div></td></tr>
+				
+			<tr><td class="fav">
+			<span class="star" onclick="fillStar(this)">&#9733;</span></td>
+			<td class="book"><span onclick="desDrop(this)">&#128366;<span class="popup">
+			Sourcegraph Cody is an AI code assistant that aids developers in writing code and finding solutions to coding questions. It relies on Sourcegraph's code graph and Large Language Models (LLMs) to offer valuable assistance.</span></span></td>
+			<td class="ainame"><a href="https://about.sourcegraph.com/cody" target="_blank">
+			Cody<span>&#x1F4BB;</span></a></td><td class="free">
+			<span>Trial</span></td><td class="des">
+			Sourcegraph Cody is an AI code assistant that aids developers in writing code and finding solutions to coding questions. It relies on Sourcegraph's code graph and Large Language Models (LLMs) to offer valuable assistance.</td>
+			<td class="try"><a href="https://about.sourcegraph.com/cody" target="_blank" class="knapp">Try it</a><div class="hov" onmouseover="hovH(this)" onmouseout="hovH(this)"></div></td></tr>
+				
+			<tr><td class="fav">
+			<span class="star" onclick="fillStar(this)">&#9733;</span></td>
+			<td class="book"><span onclick="desDrop(this)">&#128366;<span class="popup">
+			Replit Ghostwriter is an AI pair programmer that enhances the coding process by helping developers create superior and quicker code. Utilizing AI, Ghostwriter generates functions and files, offers code block suggestions, auto-completes code, refactors and transforms code, and provides clear explanations for improved understanding.</span></span></td>
+			<td class="ainame"><a href="https://replit.com/" target="_blank">
+			Replit<span>&#x1F4BB;</span></a></td><td class="free">
+			<span>Yes</span></td><td class="des">
+			Replit Ghostwriter is an AI pair programmer that enhances the coding process by helping developers create superior and quicker code. Utilizing AI, Ghostwriter generates functions and files, offers code block suggestions, auto-completes code, refactors and transforms code, and provides clear explanations for improved understanding.</td>
+			<td class="try"><a href="https://replit.com/" target="_blank" class="knapp">Try it</a><div class="hov" onmouseover="hovH(this)" onmouseout="hovH(this)"></div></td></tr>
+				
+			<tr><td class="fav">
+			<span class="star" onclick="fillStar(this)">&#9733;</span></td>
+			<td class="book"><span onclick="desDrop(this)">&#128366;<span class="popup">
+			AskCodi is a comprehensive tool designed for developers to aid them throughout the development process. It offers useful features like Time Complexity for performance insights, a JS One Liner, a regex generator, and an HTML/CSS generator, enabling programmers to code swiftly and efficiently based on their specific requirements.</span></span></td>
+			<td class="ainame"><a href="https://www.askcodi.com/" target="_blank">
+			AskCodi<span>&#x1F4BB;</span></a></td><td class="free">
+			<span>Yes</span></td><td class="des">
+			AskCodi is a comprehensive tool designed for developers to aid them throughout the development process. It offers useful features like Time Complexity for performance insights, a JS One Liner, a regex generator, and an HTML/CSS generator, enabling programmers to code swiftly and efficiently based on their specific requirements.</td>
+			<td class="try"><a href="https://www.askcodi.com/" target="_blank" class="knapp">Try it</a><div class="hov" onmouseover="hovH(this)" onmouseout="hovH(this)"></div></td></tr>
+				
+			<tr><td class="fav">
+			<span class="star" onclick="fillStar(this)">&#9733;</span></td>
+			<td class="book"><span onclick="desDrop(this)">&#128366;<span class="popup">
+			Codiga is an AI-driven static code analysis tool compatible with various development environments like VS Code, JetBrains, VisualStudio, GitHub, GitLab, and Bitbucket. It offers customizable static code analysis, secure code analysis, automated code reviews, and convenient code snippets.</span></span></td>
+			<td class="ainame"><a href="https://www.codiga.io/" target="_blank">
+			Codiga<span>&#x1F4BB;</span></a></td><td class="free">
+			<span>Yes</span></td><td class="des">
+			Codiga is an AI-driven static code analysis tool compatible with various development environments like VS Code, JetBrains, VisualStudio, GitHub, GitLab, and Bitbucket. It offers customizable static code analysis, secure code analysis, automated code reviews, and convenient code snippets.</td>
+			<td class="try"><a href="https://www.codiga.io/" target="_blank" class="knapp">Try it</a><div class="hov" onmouseover="hovH(this)" onmouseout="hovH(this)"></div></td></tr>
+				
+			<tr><td class="fav">
+			<span class="star" onclick="fillStar(this)">&#9733;</span></td>
+			<td class="book"><span onclick="desDrop(this)">&#128366;<span class="popup">
+			Bugasura is an AI-driven bug tracker created to simplify bug reporting, tracking, and resolution for modern tech teams. It serves as an efficient alternative to general project management tools like JIRA and Google Sheets that may not meet the specific requirements of bug tracking and development.</span></span></td>
+			<td class="ainame"><a href="https://bugasura.io/" target="_blank">
+			Bugasura<span>&#x1F4BB;</span></a></td><td class="free">
+			<span>Yes</span></td><td class="des">
+			Bugasura is an AI-driven bug tracker created to simplify bug reporting, tracking, and resolution for modern tech teams. It serves as an efficient alternative to general project management tools like JIRA and Google Sheets that may not meet the specific requirements of bug tracking and development.</td>
+			<td class="try"><a href="https://bugasura.io/" target="_blank" class="knapp">Try it</a><div class="hov" onmouseover="hovH(this)" onmouseout="hovH(this)"></div></td></tr>
+				
+			<tr><td class="fav">
+			<span class="star" onclick="fillStar(this)">&#9733;</span></td>
+			<td class="book"><span onclick="desDrop(this)">&#128366;<span class="popup">
+			CodeSquire is an AI-powered code writing assistant compatible with Jupyter, VS Code, Pycharm, and Google Colab. It accelerates code writing by converting comments into code, simplifies function creation, facilitates SQL query composition with clear instructions, aids in understanding existing code, and assists in constructing intricate functions involving multiple logical steps.</span></span></td>
+			<td class="ainame"><a href="https://codesquire.ai/" target="_blank">
+			CodeSquire<span>&#x1F4BB;</span></a></td><td class="free">
+			<span>Trial</span></td><td class="des">
+			CodeSquire is an AI-powered code writing assistant compatible with Jupyter, VS Code, Pycharm, and Google Colab. It accelerates code writing by converting comments into code, simplifies function creation, facilitates SQL query composition with clear instructions, aids in understanding existing code, and assists in constructing intricate functions involving multiple logical steps.</td>
+			<td class="try"><a href="https://codesquire.ai/" target="_blank" class="knapp">Try it</a><div class="hov" onmouseover="hovH(this)" onmouseout="hovH(this)"></div></td></tr>
+				
+			<tr><td class="fav">
+			<span class="star" onclick="fillStar(this)">&#9733;</span></td>
+			<td class="book"><span onclick="desDrop(this)">&#128366;<span class="popup">
+			Helicone is an open-source observability platform designed for companies utilizing generative AI. By adding just one line of code, businesses can log requests made to providers like OpenAI and effectively track costs, result quality, and latency.</span></span></td>
+			<td class="ainame"><a href="https://www.helicone.ai/" target="_blank">
+			Helicone<span>&#x1F4BB;</span></a></td><td class="free">
+			<span>Yes</span></td><td class="des">
+			Helicone is an open-source observability platform designed for companies utilizing generative AI. By adding just one line of code, businesses can log requests made to providers like OpenAI and effectively track costs, result quality, and latency.</td>
+			<td class="try"><a href="https://www.helicone.ai/" target="_blank" class="knapp">Try it</a><div class="hov" onmouseover="hovH(this)" onmouseout="hovH(this)"></div></td></tr>
+				
+			<tr><td class="fav">
+			<span class="star" onclick="fillStar(this)">&#9733;</span></td>
+			<td class="book"><span onclick="desDrop(this)">&#128366;<span class="popup">
+			What The Diff is an AI-driven app that examines the differences in your pull requests and provides descriptive comments about the changes in easy-to-understand language.</span></span></td>
+			<td class="ainame"><a href="https://whatthediff.ai/" target="_blank">
+			What The Diff<span>&#x1F4BB;</span></a></td><td class="free">
+			<span>Yes</span></td><td class="des">
+			What The Diff is an AI-driven app that examines the differences in your pull requests and provides descriptive comments about the changes in easy-to-understand language.</td>
+			<td class="try"><a href="https://whatthediff.ai/" target="_blank" class="knapp">Try it</a><div class="hov" onmouseover="hovH(this)" onmouseout="hovH(this)"></div></td></tr>
+				
+			<tr><td class="fav">
+			<span class="star" onclick="fillStar(this)">&#9733;</span></td>
+			<td class="book"><span onclick="desDrop(this)">&#128366;<span class="popup">
+			Stenography is an AI-based codebase documenter that enables developers to automatically document their codebases in real-time. With its robust API, it can process code and provide explanations in plain English, along with Stack Overflow Suggestions and linked documentation.</span></span></td>
+			<td class="ainame"><a href="https://stenography.dev/" target="_blank">
+			Stenogrphy<span>&#x1F4BB;</span></a></td><td class="free">
+			<span>No</span></td><td class="des">
+			Stenography is an AI-based codebase documenter that enables developers to automatically document their codebases in real-time. With its robust API, it can process code and provide explanations in plain English, along with Stack Overflow Suggestions and linked documentation.</td>
+			<td class="try"><a href="https://stenography.dev/" target="_blank" class="knapp">Try it</a><div class="hov" onmouseover="hovH(this)" onmouseout="hovH(this)"></div></td></tr>
+				
+			<tr><td class="fav">
+			<span class="star" onclick="fillStar(this)">&#9733;</span></td>
+			<td class="book"><span onclick="desDrop(this)">&#128366;<span class="popup">
+			Debuild is an AI-driven low-code platform that expedites web application development for developers and non-technical users. Its intuitive graphical interface enables users to visually construct interfaces and deploy them effortlessly. It automates the generation of React components and SQL code, eliminating the need for manual coding.</span></span></td>
+			<td class="ainame"><a href="https://debuild.app/" target="_blank">
+			Debuild<span>&#x1F4BB;</span></a></td><td class="free">
+			<span>Yes</span></td><td class="des">
+			Debuild is an AI-driven low-code platform that expedites web application development for developers and non-technical users. Its intuitive graphical interface enables users to visually construct interfaces and deploy them effortlessly. It automates the generation of React components and SQL code, eliminating the need for manual coding.</td>
+			<td class="try"><a href="https://debuild.app/" target="_blank" class="knapp">Try it</a><div class="hov" onmouseover="hovH(this)" onmouseout="hovH(this)"></div></td></tr>
+				
+			<tr><td class="fav">
+			<span class="star" onclick="fillStar(this)">&#9733;</span></td>
+			<td class="book"><span onclick="desDrop(this)">&#128366;<span class="popup">
+			Sheldon, an AI assistant integrated as a ChatGPT extension for Google Chrome, is designed to optimize users' browsing experience by saving them up to 40% of their time. Operating as a virtual assistant, it harnesses the power of OpenAI's ChatGPT to deliver a wide range of services. These services include generating content, providing Excel formulas, offering code snippets, and assisting with the composition of professional emails.</span></span></td>
+			<td class="ainame"><a href="https://www.heysheldon.com/" target="_blank">
+			Sheldon<span>&#9999;&#65039;&#x1F4BB;</span></a></td><td class="free">
+			<span>Yes</span></td><td class="des">
+			Sheldon, an AI assistant integrated as a ChatGPT extension for Google Chrome, is designed to optimize users' browsing experience by saving them up to 40% of their time. Operating as a virtual assistant, it harnesses the power of OpenAI's ChatGPT to deliver a wide range of services. These services include generating content, providing Excel formulas, offering code snippets, and assisting with the composition of professional emails.</td>
+			<td class="try"><a href="https://www.heysheldon.com/" target="_blank" class="knapp">Try it</a><div class="hov" onmouseover="hovH(this)" onmouseout="hovH(this)"></div></td></tr>
+				
+			<tr><td class="fav">
+			<span class="star" onclick="fillStar(this)">&#9733;</span></td>
+			<td class="book"><span onclick="desDrop(this)">&#128366;<span class="popup">
+			TeleportHQ is an AI-driven website and UI builder that utilizes code generated by OpenAI. With TeleportHQ's Vision API, developers can effortlessly transform hand-drawn wireframes into digital designs. This enables them to swiftly move from an initial concept to a complete prototype in a matter of minutes.</span></span></td>
+			<td class="ainame"><a href="https://teleporthq.io/" target="_blank">
+			TeleportHQ<span>&#x1F4BB;&#x1F3A8;</span></a></td><td class="free">
+			<span>Yes</span></td><td class="des">
+			TeleportHQ is an AI-driven website and UI builder that utilizes code generated by OpenAI. With TeleportHQ's Vision API, developers can effortlessly transform hand-drawn wireframes into digital designs. This enables them to swiftly move from an initial concept to a complete prototype in a matter of minutes.</td>
+			<td class="try"><a href="https://teleporthq.io/" target="_blank" class="knapp">Try it</a><div class="hov" onmouseover="hovH(this)" onmouseout="hovH(this)"></div></td></tr>
+				
+			<tr><td class="fav">
+			<span class="star" onclick="fillStar(this)">&#9733;</span></td>
+			<td class="book"><span onclick="desDrop(this)">&#128366;<span class="popup">
+			Nanonets is an AI-powered intelligent document processing service focused on Optical Character Recognition (OCR) technology. With its self-learning algorithms, Nanonets automates data extraction from various documents like invoices, receipts, passports, ID cards, and more.</span></span></td>
+			<td class="ainame"><a href="https://nanonets.com/" target="_blank">
+			Nanonets<span>&#x1F4BB;</span></a></td><td class="free">
+			<span>Trial</span></td><td class="des">
+			Nanonets is an AI-powered intelligent document processing service focused on Optical Character Recognition (OCR) technology. With its self-learning algorithms, Nanonets automates data extraction from various documents like invoices, receipts, passports, ID cards, and more.</td>
+			<td class="try"><a href="https://nanonets.com/" target="_blank" class="knapp">Try it</a><div class="hov" onmouseover="hovH(this)" onmouseout="hovH(this)"></div></td></tr>
+				
+			<tr><td class="fav">
+			<span class="star" onclick="fillStar(this)">&#9733;</span></td>
+			<td class="book"><span onclick="desDrop(this)">&#128366;<span class="popup">
+			Fig is an AI tool designed to fulfill your Code assistant requirements. It seamlessly integrates into your current terminal setup, working smoothly with popular terminals, shells, and IDEs.</span></span></td>
+			<td class="ainame"><a href="https://fig.io/" target="_blank">
+			Fig<span>&#x1F4BB;</span></a></td><td class="free">
+			<span>Yes</span></td><td class="des">
+			Fig is an AI tool designed to fulfill your Code assistant requirements. It seamlessly integrates into your current terminal setup, working smoothly with popular terminals, shells, and IDEs.</td>
+			<td class="try"><a href="https://fig.io/" target="_blank" class="knapp">Try it</a><div class="hov" onmouseover="hovH(this)" onmouseout="hovH(this)"></div></td></tr>
+				
+			<tr><td class="fav">
+			<span class="star" onclick="fillStar(this)">&#9733;</span></td>
+			<td class="book"><span onclick="desDrop(this)">&#128366;<span class="popup">
+			Mutable.ai is a software development tool that utilizes AI acceleration to assist developers in creating code efficiently and with exceptional quality. Its AI-autocomplete feature reduces time spent on repetitive code, while also streamlining the process of generating production-ready code with a single click.</span></span></td>
+			<td class="ainame"><a href="https://mutable.ai/" target="_blank">
+			Mutable.ai<span>&#x1F4BB;</span></a></td><td class="free">
+			<span>Yes</span></td><td class="des">
+			Mutable.ai is a software development tool that utilizes AI acceleration to assist developers in creating code efficiently and with exceptional quality. Its AI-autocomplete feature reduces time spent on repetitive code, while also streamlining the process of generating production-ready code with a single click.</td>
+			<td class="try"><a href="https://mutable.ai/" target="_blank" class="knapp">Try it</a><div class="hov" onmouseover="hovH(this)" onmouseout="hovH(this)"></div></td></tr>
+				
+			<tr><td class="fav">
+			<span class="star" onclick="fillStar(this)">&#9733;</span></td>
+			<td class="book"><span onclick="desDrop(this)">&#128366;<span class="popup">
+			Lobe is a user-friendly and free application that enables you to train your own machine learning models and incorporate them into your app. It is designed to cater to users of all experience levels, providing a secure and private environment for model training.</span></span></td>
+			<td class="ainame"><a href="https://www.lobe.ai/" target="_blank">
+			Lobe<span>&#x1F4BB;</span></a></td><td class="free">
+			<span>Yes</span></td><td class="des">
+			Lobe is a user-friendly and free application that enables you to train your own machine learning models and incorporate them into your app. It is designed to cater to users of all experience levels, providing a secure and private environment for model training.</td>
+			<td class="try"><a href="https://www.lobe.ai/" target="_blank" class="knapp">Try it</a><div class="hov" onmouseover="hovH(this)" onmouseout="hovH(this)"></div></td></tr>
+				
+			<tr><td class="fav">
+			<span class="star" onclick="fillStar(this)">&#9733;</span></td>
+			<td class="book"><span onclick="desDrop(this)">&#128366;<span class="popup">
+			Caktus AI is an AI-driven learning platform crafted to benefit students and educators alike. This comprehensive platform encompasses valuable tools like an essay writer, personal statement writer, coding assistants, and more. Additionally, Caktus AI is actively expanding its repertoire to include AI-based applications for educators, such as chatbots and software capable of essay grading and feedback provision.</span></span></td>
+			<td class="ainame"><a href="https://www.caktus.ai/" target="_blank">
+			Caktus<span>&#9999;&#65039;&#x1F4BB;</span></a></td><td class="free">
+			<span>No</span></td><td class="des">
+			Caktus AI is an AI-driven learning platform crafted to benefit students and educators alike. This comprehensive platform encompasses valuable tools like an essay writer, personal statement writer, coding assistants, and more. Additionally, Caktus AI is actively expanding its repertoire to include AI-based applications for educators, such as chatbots and software capable of essay grading and feedback provision.</td>
+			<td class="try"><a href="https://www.caktus.ai/" target="_blank" class="knapp">Try it</a><div class="hov" onmouseover="hovH(this)" onmouseout="hovH(this)"></div></td></tr>
+				
+			<tr><td class="fav">
+			<span class="star" onclick="fillStar(this)">&#9733;</span></td>
+			<td class="book"><span onclick="desDrop(this)">&#128366;<span class="popup">
+			CodeAssist is an IntelliJ IDE plugin that offers an AI-powered assistant, chatbot, and copilot for programming tasks. Compatible with popular programming languages, it features a natural language interface, allowing you to interact with it like you would with a human. CodeAssist can generate, modify, and complete code, as well as provide answers to your programming questions.</span></span></td>
+			<td class="ainame"><a href="https://www.codeassist.tech/" target="_blank">
+			CodeAssist<span>&#x1F4BB;</span></a></td><td class="free">
+			<span>Yes</span></td><td class="des">
+			CodeAssist is an IntelliJ IDE plugin that offers an AI-powered assistant, chatbot, and copilot for programming tasks. Compatible with popular programming languages, it features a natural language interface, allowing you to interact with it like you would with a human. CodeAssist can generate, modify, and complete code, as well as provide answers to your programming questions.</td>
+			<td class="try"><a href="https://www.codeassist.tech/" target="_blank" class="knapp">Try it</a><div class="hov" onmouseover="hovH(this)" onmouseout="hovH(this)"></div></td></tr>
+				
+			<tr><td class="fav">
+			<span class="star" onclick="fillStar(this)">&#9733;</span></td>
+			<td class="book"><span onclick="desDrop(this)">&#128366;<span class="popup">
+			Programming Helper is an AI-driven tool that assists with diverse programming tasks. Users can generate code by simply typing a text description, create SQL commands from descriptions, translate code to various programming languages, generate HTML and CSS from descriptions, explain code in plain English, fix invalid code, obtain tests for code, and more.</span></span></td>
+			<td class="ainame"><a href="https://www.programming-helper.com/" target="_blank">
+			Programminghelper<span>&#x1F4BB;</span></a></td><td class="free">
+			<span>Yes</span></td><td class="des">
+			Programming Helper is an AI-driven tool that assists with diverse programming tasks. Users can generate code by simply typing a text description, create SQL commands from descriptions, translate code to various programming languages, generate HTML and CSS from descriptions, explain code in plain English, fix invalid code, obtain tests for code, and more.</td>
+			<td class="try"><a href="https://www.programming-helper.com/" target="_blank" class="knapp">Try it</a><div class="hov" onmouseover="hovH(this)" onmouseout="hovH(this)"></div></td></tr>
+				
+			</tbody>
+		</table>
+		</div>
+		<div class="cat">
+		<a href="writing.html">&#9999;&#65039; Writing</a>
+        <a href="image.html">&#128444;&#65039; Image</a>
+        <a href="video.html">&#x1F3AC; Video</a>
+		<a href="voice.html">&#x1F3A4; Voice</a>
+		<a href="code.html" class="act-cat">&#x1F4BB; Code</a>
+		<a href="music.html">&#127911; Music</a>
+		<a href="design.html">&#x1F3A8; Design</a>
+	    <a href="research.html">&#x1F50D; Research</a>
+		<a href="advice.html">&#x1F4A1; Advice</a>
+		</div>
+		<div class="suggest"><p>Didn´t find the tool you were looking for? <a href="suggest.html">Suggest a tool</a></p></div>
+	</main>
+	
+	<footer>
+	<center><img src="sblogo.png" class="logo"></center>
+	<ul>
+		<li><a href="index.html#about">About Us</a></li>
+		<li><a href="terms.html">Terms &amp; Conditions</a></li>
+		<li><a href="suggest.html">Suggest a tool</a></li>
+		<li><a href="contact.html">Contact Us</a></li>
+	</ul>
+	<p>Copyright &copy;2023 SkillBayz. All rights resserved</p>
+	</footer>
+	</div>
+<script src="script.js"></script>
+</body>
+</html>
