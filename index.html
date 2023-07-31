@@ -2,9 +2,11 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>SkillBayz - Find the perfect AI tool for your needs</title>
+<title>SkillBayz - Find the perfect AI tool for your needs | AI Tools Directory</title>
+<meta name="description" content="Discover a curated list of AI tools for various purposes on SkillBayz. Find the right AI tool to enhance your projects and productivity.">
 	
 <link href="skillbayz.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="icon.ico">
 
 </head>
 
@@ -12,7 +14,7 @@
 	<div id="container">
 	<menu>
 	<div class="left">
-	<a href="index.html"><img src="sblogo.png" class="logo"></a>
+	<a href="index.html"><img src="sblogo.png" class="logo" alt="SkillBayz logo"></a>
 	<div id="nav">
 	<a href="tools.html">Tools</a>
 	<div class="dropdown">
@@ -43,10 +45,12 @@
 		<div id="slogan">
 		<center><div><h2>Find the perfect AI tool for your needs!</h2></div></center>
 		<center>
-			<div class="sok" action="#" method="get">
-            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search..." autocomplete="off">
+			<div class="sok" method="get">
+            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for tools..." autocomplete="off">
 			</div></center>
-		<center><div id="myUL"><ul id="myAI" class="list">
+			
+		<center><div id="myUL"><div id="noResult">No matches found</div>
+			<ul id="myAI" class="list">
 			<li><a href="https://adcreative.ai/" target="_blank">AdCreative.ai
 			<span>&#x1F3A8;</span></a></li>
 			<li><a href="https://www.adobe.com/se/sensei/generative-ai/firefly.html" target="_blank">Adobe Firefly
@@ -829,7 +833,7 @@
 	</main>
 	
 	<footer>
-	<center><img src="sblogo.png" class="logo"></center>
+	<center><img src="sblogo.png" class="logo" alt="SkillBayz logo"></center>
 	<div class="pages">
 		<a href="index.html#about">About Us</a>
 		<a href="terms.html">Terms &amp; Conditions</a>
