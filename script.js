@@ -82,9 +82,11 @@ var myUL = document.getElementById('myUL');
 myInput.addEventListener('input', handleSearchInput);
 
 myInput.addEventListener('blur', function () {
+  setTimeout(function() {
     myInput.value = "";
-	handleSearchInput();
-  });
+    handleSearchInput();
+  }, 300); // 100 milliseconds = 0.1 seconds
+});
 
 function handleSearchInput() {
   var searchTerm = myInput.value.trim();
