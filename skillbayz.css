@@ -7,7 +7,7 @@ html
 }
 body
 {
-	background-color:#DADFF7;
+	background-color:#0D0A0B;
 	margin:0px;
 	padding:0px;
 	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
@@ -49,6 +49,11 @@ menu{
 @media (max-width:721px) {
       .right #mobile-nav {
         display: block;
+      }
+    }
+@media (max-width:721px) {
+      .right .sok-icon {
+        display: none;
       }
     }
 @media (min-width:721px) {
@@ -395,6 +400,9 @@ table{
 	.ainame span{
 		display:none;
 	}
+	.ainame{
+		width:calc(100vw - 200px);
+	}
 }
 .shit{
 	pointer-events: none;
@@ -427,6 +435,9 @@ tbody tr:hover td{padding-top:17px;}
 tbody tr:hover .try, tbody tr:hover .ainame{padding-top:0; border-left:none; margin-left:2px;}
 .ainame{
 	padding:0 10px;
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .ainame a{
 	color:#DADFF7;
@@ -572,8 +583,8 @@ table span{
 #about
 {
 	width:100%;
-	margin:0 0 100px;
-	padding:0px;
+	margin:0;
+	padding:0 0 100px;
 	display:flex;
 	flex-wrap:wrap;
 }
@@ -637,13 +648,12 @@ table span{
 	margin-top:10px;
 }
 
-/*tools*/
 .cat{
 	background-color: #DADFF7;
 	display:flex;
 	flex-wrap:wrap;
-	padding:0 30px 30px 30px;
-	margin:30px 0 0 0;
+	padding:30px;
+	margin:0;
 	justify-content: flex-start;
 }
 .cat a{
@@ -757,6 +767,7 @@ textarea::-webkit-scrollbar-thumb{
 }
 .terms{
 	padding-bottom:100px;
+	padding-top:2px;
 }
 .terms h3{
 	margin:35px 35px 0;
