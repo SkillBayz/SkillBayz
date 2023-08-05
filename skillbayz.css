@@ -400,8 +400,8 @@ table{
 	.ainame span{
 		display:none;
 	}
-	.ainame{
-		width:calc(100vw - 200px);
+	.ainame a{
+		width:calc(100vw - 250px);
 	}
 }
 .shit{
@@ -435,9 +435,6 @@ tbody tr:hover td{padding-top:17px;}
 tbody tr:hover .try, tbody tr:hover .ainame{padding-top:0; border-left:none; margin-left:2px;}
 .ainame{
 	padding:0 10px;
-	white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 .ainame a{
 	color:#DADFF7;
@@ -445,6 +442,9 @@ tbody tr:hover .try, tbody tr:hover .ainame{padding-top:0; border-left:none; mar
 	font-weight:bold;
 	display: block;
 	padding:17px 0;
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .ainame a:hover{
 	color:#E5C687;
