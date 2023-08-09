@@ -17,7 +17,6 @@ function desDrop(element) {
   var row = element.closest('tr');
   var popup = row.querySelector('.popup');
   popup.classList.toggle('show');
-  span.classList.toggle('padd');
 }
 function hovH(element) {
     var row = element.closest('tr');

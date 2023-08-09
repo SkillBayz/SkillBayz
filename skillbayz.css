@@ -160,41 +160,35 @@ menu{
 .dropbtn {
   background-color:transparent;
   color:#DADFF7 ;
-  padding: 18px 5px 16px;
+  border:none;
+  padding: 18px 5px;
   margin:0px;
   margin-right:25px;
   font-size: 16px;
-  border: none;
   font-weight:bold;
   font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
   cursor: pointer;
 }
-.dropbtn::after {
-  content: "\25B6";
-  display: inline-block;
-  transform: rotate(0deg);
-  transition: transform 0.2s;
+.dropbtn iconify-icon{
+  transform: rotate(90deg);
+  margin-bottom:-3px;
+  margin-left:3px;
+  transition: .3s ease;
 }
 .dropdown-content {
   display: none;
   position: absolute;
   background-color: rgba(13,10,11,1);
-  border:2px solid #0D0A0B;
   border-radius:0 0 10px 10px;
   min-width: 160px;
   z-index: 4;
-  margin:1px 0 0;
+  margin:-2px 0 0;
   animation: fadeIn 0.3s ease;
 }
-.dropbtn:hover::after {
-  transform: rotate(90deg);
+.dropdown:hover .tri{
+	transform: rotate(180deg);
 }
-.dropdown:hover .dropbtn::after {
-  transform: rotate(90deg);
-}
-.dropdown-content:hover .dropdown-list {
-  display: block;
-}
+
 #nav .dropdown-content a {
   padding: 10px;
   margin:0;
@@ -474,33 +468,39 @@ tbody tr:hover{vertical-align: top;}}
 .popup{
 	display:none;
 	position: absolute;
-    top:46px;
-    left:-63px;
+    top:43px;
+    left:-59px;
     z-index: 2;
 	text-align:left;
-	width: calc(100vw - 96px);
+	width: calc(100vw - 104px);
 	color:#0D0A0B;
-	background-color:#DADFF7;
 	border-bottom: 2px solid #0D0A0B;
 	border-radius:0;
 	animation: fadeIn 0.3s ease;
 }
 .popup.show{
 	display:block;
+	background-color:#DADFF7;
+	padding:10px;
 }
 .book{
 	width:30px;
 	cursor:pointer;
 	padding-left:0;
 }
-.book span{
+.book iconify-icon{
 	padding:5px;
 	vertical-align: middle;
 	border:2px solid #DADFF7;
+	border-radius:10px;
+	background-color:#DADFF7;
+	color:#0D0A0B;
 }
-.book iconify-icon{
+.book span{
 	vertical-align: middle;
-	font-weight: bolder;
+	padding:0;
+	background-color:transparent;
+	border:none;
 }
 .padd{
 	padding-bottom: 25px;
