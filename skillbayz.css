@@ -86,7 +86,7 @@ menu{
 #mobile-nav span:hover{
 	color:#E5C687;
 }
-#mobile-nav span svg{
+#mobile-nav span iconify-icon{
 	
 	padding:12px 0;
 }
@@ -95,7 +95,7 @@ menu{
 	cursor:pointer;
 	padding:0;
 }
-.sok-icon svg{
+.sok-icon iconify-icon{
 	padding:15px 0;
 	margin-top:0px;
 }
@@ -171,7 +171,7 @@ menu{
 }
 .dropbtn iconify-icon{
   transform: rotate(90deg);
-  margin-bottom:-3px;
+  margin-bottom:-2px;
   margin-left:3px;
   transition: .3s ease;
 }
@@ -418,6 +418,13 @@ table{
 	position:absolute;
 	left:0;
 	margin-top:4px;
+}
+thead .des span{
+	border:none;
+	vertical-align: middle;
+}
+thead .des iconify-icon{
+	vertical-align: middle;
 }
 tr {
   height: 60px;
@@ -845,11 +852,11 @@ footer a:hover
 	margin:0 10px;
 	cursor:pointer;
 }
-svg{
-	fill:#DADFF7;
+footer iconify-icon{
+	color:#DADFF7;
 }
-a:hover svg{
-	fill: #E5C687;
+footer iconify-icon:hover{
+	color:#E5C687;
 }
 @media (max-width:678px) {
       .pages {
