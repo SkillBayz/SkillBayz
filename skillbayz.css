@@ -77,24 +77,31 @@ menu{
   font-size: 45px;
   cursor: pointer;
   padding: 0;
-  margin: -8px 0 0 20px;
+  margin: 0 0 0 20px;
 }
-.right #mobile-nav span:hover {
-  color: #E5C687;
+.right #mobile-nav span{
+  margin-right:35px;
+  color:#DADFF7;
+}
+#mobile-nav span:hover{
+	color:#E5C687;
+}
+#mobile-nav span svg{
+	
+	padding:12px 0;
 }
 .right .sok-icon{
-	width:20px;
-	margin-right:0px;
-	background-image:url("sok.png");
-	background-size: 20px;
-	background-repeat: no-repeat;
-	background-position: center;
+	margin-right:35px;
+	cursor:pointer;
+	padding:0;
 }
-.sok-icon:hover{background-image: url("sokhov.png");}
+.sok-icon svg{
+	padding:15px 0;
+	margin-top:0px;
+}
 .hidden {
   display:none;
 }
-
 #mob-men {
   position: absolute;
   top: 60px;
@@ -134,7 +141,7 @@ menu{
 	display:flex;
 }
 .right{
-	padding-right:35px;
+	
 }
 .right a{
 	color:#DADFF7;
@@ -160,6 +167,7 @@ menu{
   border: none;
   font-weight:bold;
   font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+  cursor: pointer;
 }
 .dropbtn::after {
   content: "\25B6";
@@ -424,15 +432,18 @@ tr {
 }
 tbody tr:hover {
     background-color:rgba(13,10,11,0.85);
-    vertical-align: top;
+    
 }
 tbody tr:hover .des{
   white-space: normal;
   overflow: visible;
   padding-bottom: 17px;
 }
+@media (min-width:891px) {
 tbody tr:hover td{padding-top:17px;}
 tbody tr:hover .try, tbody tr:hover .ainame{padding-top:0; border-left:none; margin-left:2px;}
+tbody tr:hover .fav{ padding-top:10px;}
+tbody tr:hover{vertical-align: top;}}
 .ainame{
 	padding:0 10px;
 }
@@ -464,10 +475,10 @@ tbody tr:hover .try, tbody tr:hover .ainame{padding-top:0; border-left:none; mar
 	display:none;
 	position: absolute;
     top:46px;
-    left:-69px;
+    left:-63px;
     z-index: 2;
 	text-align:left;
-	width: calc(100vw - 109px);
+	width: calc(100vw - 96px);
 	color:#0D0A0B;
 	background-color:#DADFF7;
 	border-bottom: 2px solid #0D0A0B;
@@ -480,6 +491,16 @@ tbody tr:hover .try, tbody tr:hover .ainame{padding-top:0; border-left:none; mar
 .book{
 	width:30px;
 	cursor:pointer;
+	padding-left:0;
+}
+.book span{
+	padding:5px;
+	vertical-align: middle;
+	border:2px solid #DADFF7;
+}
+.book iconify-icon{
+	vertical-align: middle;
+	font-weight: bolder;
 }
 .padd{
 	padding-bottom: 25px;
@@ -530,8 +551,11 @@ table span{
 }
 .knapp:hover{color:#E5C687;}
 .star{
-	background-color:transparent;
+	padding:5px;
 	color:#DADFF7;
+	border-radius:10px;
+	border:2px solid #DADFF7;
+	vertical-align: middle;
 }
 .star:hover{
   border:2px solid #E5C687;
@@ -818,18 +842,15 @@ footer a:hover
 }
 .media a{
 	display:inline-block;
-	width:30px;
-	height:30px;
-	background-size:cover;
-	background-repeat: no-repeat;
-	background-position: center;
 	margin:0 10px;
 	cursor:pointer;
 }
-.ig{background-image:url("ig.png")}
-.ig:hover{background-image:url("ighov.png")}
-.tt{background-image: url("tiktok.png")}
-.tt:hover{background-image:url("tiktokhov.png")}
+svg{
+	fill:#DADFF7;
+}
+a:hover svg{
+	fill: #E5C687;
+}
 @media (max-width:678px) {
       .pages {
         display:inherit;
