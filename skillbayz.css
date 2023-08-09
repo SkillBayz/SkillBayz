@@ -469,10 +469,10 @@ tbody tr:hover{vertical-align: top;}}
 	display:none;
 	position: absolute;
     top:43px;
-    left:-59px;
+    left:-94px;
     z-index: 2;
 	text-align:left;
-	width: calc(100vw - 104px);
+	width: calc(100vw - 125px);
 	color:#0D0A0B;
 	border-bottom: 2px solid #0D0A0B;
 	border-radius:0;
@@ -481,7 +481,7 @@ tbody tr:hover{vertical-align: top;}}
 .popup.show{
 	display:block;
 	background-color:#DADFF7;
-	padding:10px;
+	padding:10px 50px;
 }
 .book{
 	width:30px;
